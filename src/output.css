@@ -726,8 +726,8 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .box-border {
@@ -1989,6 +1989,11 @@ video {
   padding: 1rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2596,4 +2601,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
   @media (min-width: 1024px) {
-    .dark\:lg\:hover\:\[paint-order\
+    .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
+      paint-order: markers;
+    }
+  }
+}
