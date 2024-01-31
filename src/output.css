@@ -2506,6 +2506,10 @@ video {
   forced-color-adjust: none;
 }
 
+.custom-shadow {
+  box-shadow: 0.3rem 0.3rem 0rem rgb(0, 0, 0);
+}
+
 @font-face {
   font-family: "Inconsolata";
 
@@ -2602,10 +2606,8 @@ body {
   text-decoration-line: underline;
 }
 
-.hover\:shadow-2xl:hover {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.hover\:custom-shadow:hover {
+  box-shadow: 0.3rem 0.3rem 0rem rgb(0, 0, 0);
 }
 
 .before\:hover\:text-center:hover::before {
