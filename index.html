@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="src/output.css">
     <link rel="icon" href="assets/images/cat.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/426c14851d.js" crossorigin="anonymous"></script>
+    <style>
+        button::hover {
+            box-shadow: 0.25rem 0.25rem 0rem rgb(var(#000))
+        }
+    </style>
 </head>
 <body>
     <div class="flex flex-col justify-between h-screen w-screen bg-zinc-900">
@@ -17,9 +22,10 @@
                     <span class="font-semibold">Godwin Duliente</span>
                 </div>
                 <div class="flex gap-2">
-                    <a href="" class="px-6 py-3 bg-zinc-800 rounded border border-zinc-950 font-medium text-zinc-400 hidden sm:flex transition-transform duration-300 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-md hover:border-r hover:border-b-4 hover:border-zinc-950">About</a>
-                    <a href="https://github.com/godoin" class="p-3 bg-zinc-800 rounded border border-zinc-950 text-zinc-400 hidden sm:flex transition-transform duration-300 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-md hover:border-r hover:border-b-4 hover:border-zinc-950">
-                        <img src="/assets/images/socials/github.png" alt="Github Link">
+                    <a href="" class="px-6 py-3 bg-zinc-800 rounded border border-zinc-950 font-medium text-zinc-400 hidden sm:flex transition-transform duration-300 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl hover:z-10 hover:shadow-2xl">About</a>
+
+                    <a href="https://github.com/godoin" class="p-3 bg-zinc-800 rounded border border-zinc-950 text-zinc-400 hidden sm:flex transition-transform duration-300 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl hover:z-10">
+                        <img src="assets/images/socials/github.png" alt="Github Link">
                     </a>
                     <button id="menu-btn" class="p-3 bg-zinc-800 rounded border border-zinc-950 text-zinc-400 sm:hidden">
                         <img src="assets/images/socials/menu.png" alt="Menu Button">
@@ -31,11 +37,11 @@
                 <a href="" class="block p-2 px-4 w-full border-b-2 border-zinc-950 hover:bg-zinc-500">To Github</a>
             </div>
         </div>
-        <div class="grid justify-center items-center text-center">
+        <div class="grid justify-center items-center text-center p-4">
             <img src="assets/animation/cat_dancing.gif" alt="">
             <p class="font-bold text-zinc-400 text-lg sm:text-2xl">Behold a dancing cat!</p>
         </div>
-        <div class="mb-16 grid space-y-1">
+        <div class="mb-16 grid space-y-3">
             <div class="flex justify-center items-center space-x-4">
                 <a href="https://github.com/godoin">
                     <img src="assets/images/socials/github.png" alt="Github Link">
@@ -53,14 +59,16 @@
                     <img src="assets/images/socials/dev.png" alt="Dev Link">
                 </a>
             </div>
-            <div class="mt-6 flex justify-center items-center space-x-2">
-                <span class="text-zinc-400">@2024</span>
-                <span class="text-xl text-zinc-400">/</span>
-                <span class="text-zinc-400">godoin</span>
+            <div class="space-y-2">
+                <div class="flex justify-center items-center space-x-2">
+                    <span class="text-zinc-400">@2024</span>
+                    <span class="text-xl text-zinc-400">/</span>
+                    <span class="text-zinc-400">godoin</span>
+                </div>
+                <a href="" class="flex justify-center items-center">
+                    <span class="text-zinc-400 hover:underline">Terms</span>
+                </a>            
             </div>
-            <a href="" class="flex justify-center items-center">
-                <span class="text-zinc-400 hover:underline">Terms</span>
-            </a>            
         </div>
     </div>
     <script src="src/scripts.js"></script>
